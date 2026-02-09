@@ -10,8 +10,8 @@ export default function ValentineQuestion() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <h1 className="text-3xl font-bold">Esther, my love 💖</h1>
-      <p className="text-xl">Will you be my Valentine? 💌</p>
+      <h1 className="text-3xl font-bold">Will you be my Valentine? 💌</h1>
+      <p className="text-xl">Only yes allowed💀😂</p>
       <Button className="border rounded"><Link href="https://open.spotify.com/playlist/2AOUJzxNxoIndgDLNe7lNH?si=_rOSbI5IQx2gywcBX8ywUg&pi=R6iCfC5fQLSho">Yes 💖</Link></Button>
     </motion.div>
   );
