@@ -8,7 +8,7 @@ import { useWindowSize } from "react-use";
 import useSound from "use-sound";
 import { MotionConfig } from "framer-motion";
 
-const TARGET_SCORE = 5;
+const TARGET_SCORE = 10;
 
 export default function Game() {
   const [score, setScore] = useState(0);
@@ -17,8 +17,10 @@ export default function Game() {
   const [playSound] = useSound(
     "/sounds/Hornsphere - FOR LOVERS ft. Mutoriah, Aliye, Noi (Official Music Video) - Hornsphere.mp3",
   );
+  const [playCatchSound] = useSound("/sounds/pop.wav");
 
   function handleCatch() {
+    playCatchSound();
     setScore((prev) => {
       const next = prev + 1;
       if (next >= TARGET_SCORE) setWon(true);
